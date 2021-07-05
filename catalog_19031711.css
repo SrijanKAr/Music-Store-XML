@@ -1,0 +1,358 @@
+/* 
+    Author: Srijan Karki
+    ID: 19031711
+    Date: 3rd May 2021
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling the body and giving the background image */
+musicStore{
+    background-image: url(Image/storebackground.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+/* styling the header section of the webpage */
+storeDetail{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(202, 202, 202, 0.801);
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 2;
+
+}
+/* styling the logo  */
+logo{
+    background-image: url(Image/musicLogo1.png);
+    width: 120px;
+    height: 120px;
+    top: 5px;
+    left: 15%;
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -2px;
+}
+storeName{
+    font-family: Georgia;
+    color: rgb(151, 250, 2);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px red;
+    padding-bottom: 5px;
+}
+storeAddress,storeContact,storeURL{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(30, 49, 158);
+    font-size: 16px;
+    font-weight: bold;
+}
+songDetail{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+/* creating a container to hold the data */
+song{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgba(26, 27, 27, 0.856);
+    color: whitesmoke;
+    position: relative;
+    width: 600px;
+    min-height: 70vh;
+    border-radius: 40px;
+    box-shadow: 20px 20px 10px 5px  #0c0b0bb7;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+action{
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center;
+    margin-top: 20px; */
+
+}
+rating{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(12, 11, 11, 0.596);
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10% 50% 10% 50%;
+    font-size: 20px;
+    font-weight: 400;
+    color: #e5f415;
+    
+}
+buy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #b696a2;
+    border: 2px solid rgb(90, 84, 84);
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #15f4ee;
+}
+/* Appling the hover effect in the buy button */
+buy:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(40, 170, 57);
+}
+preview{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #b696a2;
+    border: 2px solid rgb(90, 84, 84);
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #15f4ee;
+}
+/* appling the hower effect in the preview buttoon */
+preview:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(40, 170, 57);
+}
+songName{
+    display: block;
+    width: 550px;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    color: rgb(199, 198, 230);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; 
+    font-weight: bold;
+}
+/* setting the font */
+albumName,genre,singer,director,songProducer,releaseYear,price,band,writer{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+albumName::before{
+    content: "Album Name: ";
+}
+genre::before{
+    content: "Genre: ";
+}
+singer::before{
+    content: "Singer: ";
+}
+director::before{
+    content: "Director: ";
+}
+songProducer::before{
+    content: "Producer: ";
+}
+releaseYear::before{
+    content: "Release Year: ";
+}
+price::before{
+    content: "Price: ";
+}
+band::before{
+    content: "Band: ";
+}
+writer::before{
+    content: "Writer: ";
+}
+description{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+description::before{
+    content: "Description:";
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+desc{
+    margin-top: 10px;;
+    display: list-item;
+    list-style: disc inside;
+    font-size: 12px;
+}
+/* Applying the hover effect in the list item */
+desc:hover{
+    color: rgb(228, 214, 19);
+    cursor: pointer;
+}
+/* Styling the poster */
+#img_1{
+    background-image: url(Image/713.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_2{
+    background-image: url(Image/DarlingMind.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_3{
+    background-image: url(Image/wywh.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_4{
+    background-image: url(Image/SLTS.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+} 
+/* Styling the poster */
+#img_5{
+    background-image: url(Image/Perfect.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+} 
+/* Styling the poster */
+#img_6{
+    background-image: url(Image/Memories.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 60px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_7{
+    background-image: url(Image/gM.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_8{
+    background-image: url(Image/Rememberwhen.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 100px;
+    right: 60px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_9{
+    background-image: url(Image/Skk.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}
+/* Styling the poster */
+#img_10{
+    background-image: url(Image/Pumped.jpg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    top: 120px;
+    right: 100px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 10px  5px #131212; 
+}

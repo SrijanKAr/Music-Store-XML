@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="musicStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="storeDetail"/>
+                <xs:element ref="songDetail"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- storeDetail and its child class -->
+    <xs:element name="storeDetail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="logo"/>
+                <xs:element ref="storeName"/>
+                <xs:element ref="storeAddress"/>
+                <xs:element ref="storeContact"/>
+                <xs:element ref="storeURL"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="logo" type="xs:string"/>
+    <xs:element name="storeName" type="xs:string"/>
+    <xs:element name="storeAddress" type="xs:string"/>
+    <xs:element name="storeContact" type="xs:string"/>
+    <xs:element name="storeURL" type="xs:string"/>
+
+    <xs:element name="songDetail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="song">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="poster"/>
+                <xs:element ref="songName"/>
+                <xs:element ref="albumName"/>
+                <xs:element ref="genre"/>
+                <xs:element ref="singer"/>
+                <xs:element ref="writer" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="director"  minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="songProducer" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="band" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="releaseYear"/>
+                <xs:element ref="price"/>
+                <xs:element ref="description"/>
+                <xs:element ref="action"/> 
+            </xs:sequence>
+            <!-- defining ID datatype on song_id attribute -->
+            <xs:attribute ref="song_id" use="required"/>
+            <xs:attribute ref="length"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="song_id" type="xs:string"/>
+    <xs:attribute name="length" type="xs:string"/>
+
+  <xs:element name="poster">
+     <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="id"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="id" type="xs:string"/>
+
+    <xs:element name="songName" type="xs:string"/>
+    <xs:element name="albumName" type="xs:string"/>
+    <xs:element name="genre" type="xs:string"/>
+    <xs:element name="singer">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="title"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="title">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Mr." />
+				<xs:enumeration value="Mrs." />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+    <xs:element name="writer" type="xs:string"/>
+    <xs:element name="director" type="xs:string"/>
+    <xs:element name="songProducer" type="xs:string"/>
+    <xs:element name="band" type="xs:string"/>
+    <xs:element name="releaseYear" type="xs:string"/>
+
+    <xs:element name="price">
+     <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="currency"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="currency" type="xs:string" fixed="NRP"/>
+        
+    <xs:element name="description">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="desc" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+    <xs:element name="desc" type="xs:string"/>
+    <xs:element name="action">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="buy"/>
+                <xs:element ref="rating"/>
+                <xs:element ref="preview"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="buy" type="xs:string"/>
+    <xs:element name="rating" type="xs:string"/>
+    <xs:element name="preview" type="xs:string"/>
+</xs:schema>

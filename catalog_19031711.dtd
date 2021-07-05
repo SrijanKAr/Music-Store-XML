@@ -1,0 +1,32 @@
+<!ELEMENT musicStore (storeDetail,songDetail)>
+<!ELEMENT storeDetail (logo,storeName,storeAddress,storeContact,storeURL)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT storeName (#PCDATA)>
+<!ELEMENT storeAddress (#PCDATA)>
+<!ELEMENT storeContact (#PCDATA)>
+<!ELEMENT storeURL (#PCDATA)>
+
+<!ELEMENT songDetail (song+)>
+<!ELEMENT song (poster,songName,albumName,genre,singer,writer?,director,songProducer?,band?,releaseYear,price,description,action)>
+<!ELEMENT songName (#PCDATA)>
+<!ELEMENT albumName (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT singer (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT songProducer (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT band (#PCDATA)>
+<!ELEMENT releaseYear (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT poster (#PCDATA)>
+<!ELEMENT description (desc+)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT action (buy,rating,preview)>
+<!ELEMENT buy (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT preview (#PCDATA)>
+
+<!ATTLIST song song_id ID #REQUIRED length CDATA #IMPLIED>
+<!ATTLIST singer title (Mr. | Mrs.) #IMPLIED>
+<!ATTLIST price currency CDATA #FIXED "NRP">
+<!ATTLIST poster id ID #REQUIRED>

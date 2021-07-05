@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="catalog_19031711.css" type="text/css"?>
+<!--
+    Author: Srijan Karki
+    ID: 19031711
+    Date: 3rd May 2021
+-->
+<!DOCTYPE musicStore SYSTEM "catalog_19031711.dtd"> 
+<!-- body-section -->
+<musicStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="catalog_19031711.xsd">
+    <storeDetail>
+        <logo />
+        <storeName>Loud Track Music Plaza</storeName>
+        <storeAddress>Itahari-01,Sunsari</storeAddress>
+        <storeContact>025-580597</storeContact>
+        <storeURL>https://www.Loudtrackmusic.com</storeURL>
+    </storeDetail>
+    <songDetail>
+        <song song_id="song1" length="5:24">
+            <poster id="img_1"/>
+            <songName>713</songName>
+            <albumName>713</albumName>
+            <genre>Jazz</genre>
+            <singer title="Mr.">Jame Francies</singer>
+            <director>Alex Gilbeaux</director>
+            <songProducer>Blue Note Records</songProducer>
+            <releaseYear>15 April 2021</releaseYear>
+            <price currency="NRP">Rs. 350</price>
+            <description>
+                <desc>Pianist,producer, and composer James Francies has released "713", a vivid tribute to his Houston hometown.</desc>
+                <desc>The albumâ€™s core trio includes Franciesâ€™ longtime collaborators Burniss Travis on bass and Jeremy Dutton on drumsâ€”three Houston-raised artists who have been playing together and developing alongside one another for more than a decade.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>3.5/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song2" length="5:32">
+            <poster id="img_2"/>
+            <songName>Relentless Mind</songName>
+            <albumName>Darling Mind</albumName>
+            <genre>Jazz</genre>
+            <singer title="Mrs.">Jihyee Lee</singer>
+            <director>Darcy James Argue</director>
+            <releaseYear>29 March 2021</releaseYear>
+            <price currency="NRP">Rs. 300</price>
+            <description>
+                <desc>Jihye Lee Orchestra's album Daring Mind (3.26.21/ MotÃ©ma) begins with the powerful composition â€œRelentless Mindâ€, which emulates the bustle of New York City with its twisted rhythmic feel and repetitive notes.</desc>
+                <desc>Featuring trumpeter Sean Jones and trombonist Alan Ferber, the vibrancy and beauty of a pre-COVID city that never slept is on rich display in this dazzling opener. </desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>3.26/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song3" length="5:41">
+            <poster id="img_3"></poster>
+            <songName>Wish You Were Here</songName>
+            <albumName>Wish You Were Here</albumName>
+            <genre>Rock</genre>
+            <singer title="Mr.">Pink Flyod</singer>
+            <writer>Roger Walter</writer>
+            <director>Kieran Darcy-Smith</director>
+            <band>Pink Floyd</band>
+            <releaseYear>12 September 1975</releaseYear>
+            <price currency="NRP">Rs. 400</price>
+            <description>
+                <desc>"Wish You Were Here" is a song by the English rock band Pink Floyd.</desc>
+                <desc>It was released as the title track of their 1975 album Wish You Were Here.</desc>
+                <desc>David Gilmour and Roger Waters collaborated to write the music, and Gilmour sang the lead vocal.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>4.30/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+
+        <song song_id="song4" length="5:01">
+            <poster id="img_4"/>
+            <songName>Smells Like Teen Spirit</songName>
+            <albumName>Nevermind</albumName>
+            <genre>Rock</genre>
+            <singer title="Mr.">Kurt Cobain</singer>
+            <director>Samuel David Bayer</director>
+            <songProducer>Butch Vig</songProducer>
+            <band>Nirvana</band>
+            <releaseYear>10 September 1991</releaseYear>
+            <price currency="NRP">Rs. 400</price>
+            <description>
+                <desc>"Smells Like Teen Spirit" is a song by American rock band Nirvana.</desc>
+                <desc>The song was dubbed an "anthem for apathetic kids" of Generation X, but Nirvana grew uncomfortable with the attention it brought them.</desc>
+                <desc>"Smells Like Teen Spirit" was included in the Rock and Roll Hall of Fame's list of The Songs That Shaped Rock and Roll.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>4.50/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song5" length="4:23">
+            <poster id="img_5"/>
+            <songName>Perfect</songName>
+            <albumName>Divide</albumName>
+            <genre>Pop Music</genre>
+            <singer title="Mr.">Ed Sheeran</singer>
+            <writer>Jason Koenig</writer>
+            <director>Jason Koenig</director>
+            <songProducer>Honna Kimmerer</songProducer>
+            <releaseYear>9 November 2017</releaseYear>
+            <price currency="NRP">Rs. 400</price>
+            <description>
+                <desc>"Perfect" is a song by English singer-songwriter Ed Sheeran from his third studio album.</desc>
+                <desc>Sheeran revealed that the inspiration for the lyrics came after visiting James Blunt's house in Ibiza, where the two singers had listened to the rapper Future's music at six in the morning.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>4.30/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song6" length="3:09">
+            <poster id="img_6"/>
+            <songName>Memories</songName>
+            <albumName>Memories</albumName>
+            <genre>Pop Music</genre>
+            <singer title="Mr.">Adam Levine</singer>
+            <director>David Dobkin</director>
+            <songProducer>The Monsters and the Strangerz</songProducer>
+            <releaseYear>20 September 2019</releaseYear>
+            <price currency="NRP">Rs. 250</price>
+            <description>
+                <desc>"Memories" is a song by American band Maroon 5, released through 222 and Interscope Records on September 20, 2019.</desc>
+                <desc>The song is based on "Canon in D Major" by German composer Johann Pachelbel.</desc>
+                <desc>"Memories" received mixed-to-positive reviews from music critcs.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>3.42/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song7" length="3:25">
+            <poster id="img_7"/>
+            <songName>God's Country</songName>
+            <albumName>God's Country</albumName>
+            <genre>Country Music</genre>
+            <singer title="Mr.">Blake Shelton</singer>
+            <director>Jordan Schmidt Hardy</director>
+            <songProducer>Scott Hendricks</songProducer>
+            <releaseYear>29 March 2019</releaseYear>
+            <price currency="NRP">Rs. 200</price>
+            <description>
+                <desc>The song has been described as a southern rock anthem.</desc>
+                <desc>"God's Country" is a song recorded by American country music singer Blake Shelton.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>6.5/10</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song8" length="4:30">
+            <poster id="img_8"/>
+            <songName>Remember When</songName>
+            <albumName>Greatest Hits Volumn II</albumName>
+            <genre>Country Music</genre>
+            <singer title="Mr.">Alan Jackson</singer>
+            <director>Keith Stegall</director>
+            <releaseYear>27 October 2003</releaseYear>
+            <price currency="NRP">Rs. 120</price>
+            <description>
+                <desc>"Remember When" is a song written and recorded by American country music artist Alan Jackson.</desc>
+                <desc>Released in October 2003 as the second and final single from his compilation album, Greatest Hits Volume II, it spent two weeks at number 1 on the U.S. </desc>
+                <desc>Billboard Hot Country Songs chart in February 2004 and peaked at number 29 on the Billboard Hot 100.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>3.37/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song9" length="3:35">
+            <poster id="img_9"></poster>
+            <songName>SKRILLEX</songName>
+            <albumName>Bangarang</albumName>
+            <genre>Dubstep</genre>
+            <singer>Sirah</singer>
+            <writer>Sonny Moore</writer>
+            <director>Tony T. Datis</director>
+            <songProducer>HK corp</songProducer>
+            <releaseYear>23 October 2011</releaseYear>
+            <price currency="NRP">Rs. 500</price>
+            <description>
+                <desc>"Bangarang" is a song by American electronic music producer Skrillex.</desc>
+                <desc>It was released as a single from his EP of the same name.</desc>
+                <desc>It features guest rap vocals from American hip hop recording artist Sirah.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>3.0/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+        <song song_id="song10" length="4:15">
+            <poster id="img_10"></poster>
+            <songName>Pumped Up Kicks</songName>
+            <albumName>Pumped Up Kicks</albumName>
+            <genre>Dubstep</genre>
+            <singer>Foster The People</singer>
+            <writer>Marks Foster</writer>
+            <director>MARQUESE SCOTT</director>
+            <releaseYear>23 September 2010</releaseYear>
+            <price currency="NRP">Rs. 250</price>
+            <description>
+                <desc>"Pumped Up Kicks" is a song by American indie pop band Foster the People.</desc>
+                <desc>It was released as the band's debut single in September 2010, and the  following year was included on their EP Foster the People and their debut album, Torches.</desc>
+            </description>
+            <action>
+                <buy>Buy</buy>
+                <rating>4.0/5.0</rating>
+                <preview>Preview</preview>
+            </action>
+        </song>
+    </songDetail>
+</musicStore>
+<!-- body-section-end -->
